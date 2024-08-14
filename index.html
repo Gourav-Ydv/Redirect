@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Page</title>
     <script>
+        // Function to handle the redirection
         function redirectTo(url) {
-            // Wait for the page to be fully loaded
+            // Redirect after the page has fully loaded
             window.onload = function() {
-                // Redirect after page load
-                setTimeout(function() {
-                    window.location.href = "https://wa.me/+917838132585?text=Hello%20Bhai%20mujhe%20without%20investment%20work%20ki%20sari%20detials%C2%A0bta%C2%A0dijiye";
-                }, 1000); // Adjust delay if needed
+                // Redirect to the URL
+                window.location.href = url;
             };
         }
+
+        // Call the function with your target URL
+        redirectTo('https://wa.me/+917838132585?text=Hello%20Bhai%20mujhe%20without%20investment%20work%20ki%20sari%20detials%C2%A0bta%C2%A0dijiye');
     </script>
 </head>
-<body onload="redirectTo('https://wa.me/+917838132585?text=Hello%20Bhai%20mujhe%20without%20investment%20work%20ki%20sari%20detials%C2%A0bta%C2%A0dijiye')">
+<body>
     <p>Loading, please wait...</p>
 </body>
 </html>
