@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://wa.me/+917838132585?text=Hello%20Bhai%20mujhe%20without%20investment%20work%20ki%20sari%20detials%C2%A0bta%C2%A0dijiye">
-    <title>Redirecting...</title>
+    <title>Redirect Page</title>
+    <script>
+        function redirectTo(url) {
+            // Wait for the page to be fully loaded
+            window.onload = function() {
+                // Redirect after page load
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 1000); // Adjust delay if needed
+            };
+        }
+    </script>
 </head>
-<body>
-    <p></p>
+<body onload="redirectTo('https://wa.me/+917838132585?text=Hello%20Bhai%20mujhe%20without%20investment%20work%20ki%20sari%20detials%C2%A0bta%C2%A0dijiye')">
+    <p>Loading, please wait...</p>
 </body>
 </html>
