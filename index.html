@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join WhatsApp Community</title>
+    <title>Redirect Page</title>
+    
+    <!-- Meta Pixel Code -->
     <script>
-        // Function to automatically click the hidden button
-        function autoClick() {
-            document.getElementById("joinButton").click();
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1168332634395190'); // Your Pixel ID
+        fbq('track', 'PageView'); // Track page views
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1168332634395190&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        // Function to handle the redirection
+        function redirectTo(url) {
+            // Redirect after the page has fully loaded
+            window.onload = function() {
+                // Track a custom event before redirecting
+                fbq('track', 'RedirectOccurred'); // Custom event name
+                
+                // Redirect to the URL
+                window.location.href = url;
+            };
         }
 
-        // Trigger the function when the page loads
-        window.onload = autoClick;
+        // Call the function with your target URL
+        redirectTo('https://bit.ly/3AsGZRN');
     </script>
 </head>
 <body>
-    <!-- Hidden button that will redirect to WhatsApp group -->
-    <a id="joinButton" href="https://chat.whatsapp.com/IjA0RXkkDjM8gsTh1s1J0t" style="display: none;">Join WhatsApp Group</a>
-
-    <p>Redirecting to WhatsApp, please wait...</p>
+    <p>Redirecting, please wait...</p>
 </body>
 </html>
