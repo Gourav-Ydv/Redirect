@@ -27,14 +27,11 @@
     <script>
         // Function to handle the redirection
         window.onload = function() {
-            // Track a custom event before redirecting
+            // Track the custom event immediately
             fbq('track', 'RedirectOccurred'); // Custom event name
             
-            // Wait for a brief moment to ensure the event is tracked
-            setTimeout(function() {
-                // Redirect to the WhatsApp group link
-                window.location.href = "https://chat.whatsapp.com/L3z7Al3uNnS1Ze2JiuptUP";
-            }, 1000); // 1 second delay to ensure event is tracked
+            // Immediately redirect to WhatsApp group link
+            window.location.href = "https://chat.whatsapp.com/L3z7Al3uNnS1Ze2JiuptUP";
         };
     </script>
 </head>
