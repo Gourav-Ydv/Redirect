@@ -3,8 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Join WhatsApp Community</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f6ee;
+            color: #333;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #421d8a;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .container img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+        .container h2 {
+            color: #ffff;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #f3cb0d;
+            font-weight: bold;
+        }
+        .cross p {
+            color: #d7521c;
+            background-color: #f4f0f0;
+            max-width: 60%;
+            font-size: 1.2em;
+            margin: auto;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .hindi-text {
+            color: #f3cb0d;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+        .earnings {
+            background-color: #f3cb0d;
+            color: #fff;
+            font-weight: 700;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .cta-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+        .cta-btn:hover {
+            background-color: #1eb25b;
+        }
+
+        /* Media Query for Mobile Optimization */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 20px;
+                height: 90vh;
+            }
+            .container {
+                /* margin: auto; */
+                padding: 20px;
+                /* height: 70vh; */
+                max-width: 100%;
+            }
+            .container h2 {
+                font-size: 1.5em;
+                margin-bottom: 35px;
+            }
+            .cross p {
+                font-size: 1.3em;
+                max-width: 90%;
+                margin-bottom: 10px;
+            }
+            .hindi-text {
+                margin-top:30px ;
+                font-size: 1.3em;
+            }
+            .earnings {
+                font-size: 1em;
+                padding: 8px;
+            }
+            .cta-btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
     <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -15,16 +125,35 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1168332634395190'); // Your Pixel ID
-        fbq('track', 'PageView'); // Track page views
-        window.location.href = "https://chat.whatsapp.com/L3z7Al3uNnS1Ze2JiuptUP";
+        fbq('init', '1168332634395190'); // Replace 'YOUR_PIXEL_ID' with your actual Meta Pixel ID
+        fbq('track', 'PageView');
     </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1168332634395190&ev=PageView&noscript=1" />
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1168332634395190&ev=PageView&noscript=1" /> <!-- Replace 'YOUR_PIXEL_ID' with your actual Meta Pixel ID -->
     </noscript>
     <!-- End Meta Pixel Code -->
 </head>
 <body>
+
+<div class="container">
+    <h2>India's First  <br><span class="highlight">Zero Investment Work</span></h2>
+
+    <div class="cross">
+        <p>❌ No Affiliate Marketing</p>
+        <p>❌ No Network Marketing</p>
+        <p>❌ No Course Selling</p>
+        <p>❌ No Gambling</p>
+        <p>❌ No Investment</p>
+    </div>
+
+    <p class="hindi-text">We are on the way to prove that<br>पैसा लगाये बिना भी, <br> पैसा कमाया जा सकता है।</p>
+
+    <div class="earnings">
+        <p>30k - 40k earning monthly</p>
+    </div>
+
+    <a href="https://chat.whatsapp.com/L3z7Al3uNnS1Ze2JiuptUP" class="cta-btn" onclick="fbq('track', 'JoinCommunity');">Join Our WhatsApp Community</a>
+</div>
+
 </body>
 </html>
